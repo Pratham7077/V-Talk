@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>V-Chat</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+      *{
+  margin: 0;
+  padding: 0;
+      font-family: 'Fira Sans', sans-serif;
+}
+      .center{
+  background: white;
+  margin: auto;
+  margin-top: 10px;
+  width: 50vw;
+  padding: 5px;
+  border: 2px solid black;
+  border-top-right-radius: 150px;
+  border-bottom-right-radius: 150px;
+  color: black;
+  overflow-wrap: break-word;
+        clear:both;
+    }
+     .h{
+  background-color: #278fce;
+  padding: 10px;
+  height: 4vh;
+  display: flex;
+  align-items: center;
+}
+
+.h h2{
+  color: white;
+}
+.msgbox{
+  margin: auto;
+  margin-top: 20px;
+  height: 70vh;
+  
+  width: 90vw;
+  border: 3px solid black;
+  border-radius: 2px;
+  overflow-y: scroll;
+  color: black;
+  background: #3f3f3f;
+}
+
+.right{
+  background:#278fce;
+  float: right;
+  clear: both;
+  margin: 1rem;
+  width: 50vw;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 10px;
+  color: white;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  /*display: flex;
+  flex-wrap: w*/
+  overflow-wrap: break-word;
+}
+
+.left{
+  background: white;
+  float: left;
+  clear: both;
+  margin: 1rem;
+  width: 50vw;
+  padding: 5px;
+  border: 2px solid black;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: black;/*
+  display: flex;
+  flex-wrap: wrap;*/
+  overflow-wrap: break-word;
+}  
+
+.send{
+  margin: auto;
+  max-height: 5vh;
+  margin-top: 5px;
+} 
+
+#sendm{
+  min-height: 40px;
+  width: 75vw;
+  margin-left: 20px;
+  padding-left: 10px;
+}
+
+#sendmsg{
+  min-height:40px;
+  width: 40px;
+  border: 2px solid black ;
+  border-radius: 10px;
+  margin-bottom: 5px;
+} 
+
+
+  </style>
+  
+</head>
+<body>
+  <div class="h"
+    <h2>V-Chat</h2>
+  </div>
+  <div class="msgbox">
+   <div class="left"><strong>V-Talk:</strong><br>Welcome to V-talk sir/mam</div>
+    <div class="left"><strong>M-Bot: Hello User</strong></div>
+    <div class="left"><strong>V-Talk: <br>Is Made By &copy;  Pratham7077</strong></div>
+    
+   </div>
+  <div class="send">
+    <input type="text" placeholder="Message" id="sendm">
+    <button type="submit" id="sendmsg" onclick="sendMessage()">✔️</button>
+      
+
+  </div>
+</body>
+    <script src="/socket.io/socket.io.js"></script>
+  <script src="index.js">
+  </script>
+  
+    <script src="client.js"></script>
+  </html>
