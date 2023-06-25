@@ -18,7 +18,7 @@ if (name === "Pratham"){
   } while (!passover);
   
   if (passover === "png12abc"){
-    name = "👑 Pratham"
+    name = "👑 Pratham(Owner)"
   }
   else{
     
